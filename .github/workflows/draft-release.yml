@@ -3,6 +3,7 @@ name: Draft release
 on:
   #presume that pull_request_target is safe at this point, since the PR was approved and merged
   #we need write access to prepare the release & create comments
+  workflow_dispatch:
   pull_request_target:
     types:
       - closed
